@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/graph"
+    app:startDestination="@id/startFragment">
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.royyan.navigationformulir.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <argument
+            android:name="namaMahasiswa"
+            app:argType="string"
+            android:defaultValue="default" />
+        <argument
+            android:name="jenisKelamain"
+            app:argType="string"
+            android:defaultValue="jk" />
+        <argument
+            android:name="statusKawin"
+            app:argType="string"
+            android:defaultValue="statusKawin" />
+        <argument
+            android:name="agama"
+            app:argType="string"
+            android:defaultValue="agama" />
+        <argument
+            android:name="kewarganegaraan"
+            app:argType="string"
+            android:defaultValue="kewarganegaraan" />
+        <argument
+            android:name="alamatSurat"
+            app:argType="string" />
+        <argument android:name="alamatAsal"
+            app:argType="string" />
+        <argument android:name="kota"
+            app:argType="string" />
+        <argument
+            android:name="provinsi"
+            app:argType="string" />
+        <argument
+            android:name="noRumah"
+            app:argType="string" />
+        <argument
+            android:name="noHp"
+            app:argType="string" />
+        <argument
+            android:name="email"
+            app:argType="string" />
+        <argument
+            android:name="namaOrtu"
+            app:argType="string" />
+        <argument
+            android:name="asalPerguruan"
+            app:argType="string" />
+        <argument
+            android:name="prodi"
+            app:argType="string" />
+        <argument
+            android:name="akreditasi"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.royyan.navigationformulir.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
+</navigation>

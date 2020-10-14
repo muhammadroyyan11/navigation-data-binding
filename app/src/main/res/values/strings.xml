@@ -1,0 +1,46 @@
+<resources>
+
+    <string name="app_name">Navigation Formulir</string>
+
+    <string-array name="status">
+        <item>Belum menikah</item>
+        <item>Menikah</item>
+        <item>Biaragwan / Biarawati</item>
+    </string-array>
+
+    <string-array name="agama">
+        <item>Islam</item>
+        <item>Katolik</item>
+        <item>Kristen</item>
+        <item>Budha</item>
+        <item>Hindu</item>
+        <item>Lain - Lain</item>
+    </string-array>
+
+    <string-array name="akreditasi">
+        <item>Terakreditasi</item>
+        <item>Belum Terakreditasi</item>
+    </string-array>
+
+    <string-array name="pilihan">
+        <item>Desain Produk Mekatronika</item>
+        <item>Instrumentasi Medis</item>
+    </string-array>
+
+    <string-array name="jurusanSekolah">
+        <item>SMA IPA</item>
+        <item>SMA IPS</item>
+        <item>SMA Bahasa</item>
+        <item>SMA Ekonomi</item>
+        <item>SMK Teknik</item>
+        <item>SMK Keterampilan</item>
+        <item>SMF</item>
+        <item>Lain - Lain</item>
+    </string-array>
+
+    <string-array name="negeriSwasta">
+        <item>Negeri</item>
+        <item>Swasta</item>
+    </string-array>
+
+</resources>

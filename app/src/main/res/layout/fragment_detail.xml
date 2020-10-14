@@ -1,0 +1,812 @@
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DetailActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/biodata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="DATA PENDAFTARAN MABA"
+                    style="@style/styleJudul"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="32dp"
+                    style="@style/styleSubJudul"
+                    android:text="A. Data Calon Mahasiswa dan Orangtua/Wali"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/biodata" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Nama Mahasiswa"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvA" />
+
+                <TextView
+                    android:id="@+id/nim"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Jenis Kelamin"
+                    app:layout_constraintStart_toStartOf="@id/name"
+                    app:layout_constraintTop_toBottomOf="@id/name" />
+
+                <TextView
+                    android:id="@+id/tanggal"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Status"
+                    app:layout_constraintStart_toStartOf="@id/nim"
+                    app:layout_constraintTop_toBottomOf="@id/nim" />
+
+                <TextView
+                    android:id="@+id/jenis_kelamin_item"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Agama"
+                    app:layout_constraintStart_toStartOf="@id/tanggal"
+                    app:layout_constraintTop_toBottomOf="@id/tanggal" />
+
+
+                <TextView
+                    android:id="@+id/kewarganegaraan"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Kewarganegaraan"
+                    app:layout_constraintStart_toStartOf="@id/jenis_kelamin_item"
+                    app:layout_constraintTop_toBottomOf="@id/jenis_kelamin_item" />
+
+                <TextView
+                    android:id="@+id/alamatSurat"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Alamat Surat"
+                    app:layout_constraintStart_toStartOf="@id/kewarganegaraan"
+                    app:layout_constraintTop_toBottomOf="@id/kewarganegaraan" />
+
+                <TextView
+                    android:id="@+id/item_nama"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="namaMahasiswa"
+                    app:layout_constraintBottom_toBottomOf="@+id/name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/name"
+                    app:layout_constraintTop_toTopOf="@+id/name" />
+
+                <TextView
+                    android:id="@+id/itemJk"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/nim"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/nim"
+                    app:layout_constraintTop_toTopOf="@+id/nim" />
+
+                <TextView
+                    android:id="@+id/item_status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/tanggal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tanggal"
+                    app:layout_constraintTop_toTopOf="@+id/tanggal" />
+
+                <TextView
+                    android:id="@+id/item_agama"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/jenis_kelamin_item"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/jenis_kelamin_item"
+                    app:layout_constraintTop_toTopOf="@+id/jenis_kelamin_item" />
+
+                <TextView
+                    android:id="@+id/item_kewarganegaraan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/kewarganegaraan"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/kewarganegaraan"
+                    app:layout_constraintTop_toTopOf="@+id/kewarganegaraan" />
+
+                <TextView
+                    android:id="@+id/item_alamat_surat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/alamatSurat"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/alamatSurat"
+                    app:layout_constraintTop_toTopOf="@+id/alamatSurat" />
+
+                <TextView
+                    android:id="@+id/alamatAsal"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Alamat Asal"
+                    app:layout_constraintStart_toStartOf="@id/alamatSurat"
+                    app:layout_constraintTop_toBottomOf="@id/alamatSurat" />
+
+                <TextView
+                    android:id="@+id/item_asal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/alamatAsal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/alamatAsal"
+                    app:layout_constraintTop_toTopOf="@+id/alamatAsal" />
+
+                <TextView
+                    android:id="@+id/kota"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Kota / Kabupaten"
+                    app:layout_constraintStart_toStartOf="@id/alamatAsal"
+                    app:layout_constraintTop_toBottomOf="@id/alamatAsal" />
+
+                <TextView
+                    android:id="@+id/item_kota"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/kota"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/kota"
+                    app:layout_constraintTop_toTopOf="@+id/kota" />
+
+                <TextView
+                    android:id="@+id/prov"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Provinsi"
+                    app:layout_constraintStart_toStartOf="@id/kota"
+                    app:layout_constraintTop_toBottomOf="@id/kota" />
+
+                <TextView
+                    android:id="@+id/item_prov"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/prov"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/prov"
+                    app:layout_constraintTop_toTopOf="@+id/prov" />
+
+                <TextView
+                    android:id="@+id/NoRumah"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Nomer Telp rumah"
+                    app:layout_constraintStart_toStartOf="@id/prov"
+                    app:layout_constraintTop_toBottomOf="@id/prov" />
+
+                <TextView
+                    android:id="@+id/item_noRumah"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/NoRumah"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/NoRumah"
+                    app:layout_constraintTop_toTopOf="@+id/NoRumah" />
+
+                <TextView
+                    android:id="@+id/noHp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="No Telp Hp"
+                    app:layout_constraintStart_toStartOf="@id/NoRumah"
+                    app:layout_constraintTop_toBottomOf="@id/NoRumah" />
+
+                <TextView
+                    android:id="@+id/item_noHp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/noHp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/noHp"
+                    app:layout_constraintTop_toTopOf="@+id/noHp" />
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="E-Mail"
+                    app:layout_constraintStart_toStartOf="@id/noHp"
+                    app:layout_constraintTop_toBottomOf="@id/noHp" />
+
+                <TextView
+                    android:id="@+id/item_email"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/email"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/email"
+                    app:layout_constraintTop_toTopOf="@+id/email" />
+
+                <TextView
+                    android:id="@+id/namaOrtu"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Nama Orang Tua"
+                    app:layout_constraintStart_toStartOf="@id/email"
+                    app:layout_constraintTop_toBottomOf="@id/email" />
+
+                <TextView
+                    android:id="@+id/item_namaOrtu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/namaOrtu"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/namaOrtu"
+                    app:layout_constraintTop_toTopOf="@+id/namaOrtu" />
+
+                <TextView
+                    android:id="@+id/tvPerguruan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="(*) Untuk Mahasiswa Trasnfer"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@id/namaOrtu"
+                    app:layout_constraintTop_toBottomOf="@id/namaOrtu" />
+
+
+                <TextView
+                    android:id="@+id/perguruan"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Asal Perguruan Tinggi"
+                    app:layout_constraintStart_toStartOf="@id/tvPerguruan"
+                    app:layout_constraintTop_toBottomOf="@id/tvPerguruan" />
+
+                <TextView
+                    android:id="@+id/item_perguruan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/perguruan"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/perguruan"
+                    app:layout_constraintTop_toTopOf="@+id/perguruan" />
+
+                <TextView
+                    android:id="@+id/prodi"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Nama Program Studi"
+                    app:layout_constraintStart_toStartOf="@id/perguruan"
+                    app:layout_constraintTop_toBottomOf="@id/perguruan" />
+
+                <TextView
+                    android:id="@+id/item_prodi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/prodi"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/prodi"
+                    app:layout_constraintTop_toTopOf="@+id/prodi" />
+
+                <TextView
+                    android:id="@+id/akreditasi"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Status Akreditasi"
+                    app:layout_constraintStart_toStartOf="@id/prodi"
+                    app:layout_constraintTop_toBottomOf="@id/prodi" />
+
+                <TextView
+                    android:id="@+id/item_akreditasi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/akreditasi"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/akreditasi"
+                    app:layout_constraintTop_toTopOf="@+id/akreditasi" />
+
+                <TextView
+                    android:id="@+id/tvB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="32dp"
+                    android:text="B. Program Studi Yang Dipilih"
+                    style="@style/styleSubJudul"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/akreditasi" />
+
+                <TextView
+                    android:id="@+id/pilihanA"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Pilihan pertama"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvB" />
+
+                <TextView
+                    android:id="@+id/item_pilihanA"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/pilihanA"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/pilihanA"
+                    app:layout_constraintTop_toTopOf="@+id/pilihanA" />
+
+                <TextView
+                    android:id="@+id/pilihanB"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Pilihan Kedua"
+                    app:layout_constraintStart_toStartOf="@id/pilihanA"
+                    app:layout_constraintTop_toBottomOf="@id/pilihanA" />
+
+                <TextView
+                    android:id="@+id/item_pilihanB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/pilihanB"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/pilihanB"
+                    app:layout_constraintTop_toTopOf="@+id/pilihanB" />
+
+                <TextView
+                    android:id="@+id/tvC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="32dp"
+                    android:text="C. Data Sekolah Menengah"
+                    style="@style/styleSubJudul"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pilihanB" />
+
+                <TextView
+                    android:id="@+id/asalSekolah"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Asal Sekolah"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvC" />
+
+                <TextView
+                    android:id="@+id/item_asalSekolah"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/asalSekolah"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/asalSekolah"
+                    app:layout_constraintTop_toTopOf="@+id/asalSekolah" />
+
+                <TextView
+                    android:id="@+id/alamatSekolah"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Alamat Sekolah"
+                    app:layout_constraintStart_toStartOf="@id/asalSekolah"
+                    app:layout_constraintTop_toBottomOf="@id/asalSekolah" />
+
+                <TextView
+                    android:id="@+id/item_alamatSekolah"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/alamatSekolah"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/alamatSekolah"
+                    app:layout_constraintTop_toTopOf="@+id/alamatSekolah" />
+
+                <TextView
+                    android:id="@+id/kotaSekolah"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Kota / Kabupaten"
+                    app:layout_constraintStart_toStartOf="@id/alamatSekolah"
+                    app:layout_constraintTop_toBottomOf="@id/alamatSekolah" />
+
+                <TextView
+                    android:id="@+id/item_kotaSekolah"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/kotaSekolah"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/kotaSekolah"
+                    app:layout_constraintTop_toTopOf="@+id/kotaSekolah" />
+
+                <TextView
+                    android:id="@+id/provinsiSekolah"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Provinsi"
+                    app:layout_constraintStart_toStartOf="@id/kotaSekolah"
+                    app:layout_constraintTop_toBottomOf="@id/kotaSekolah" />
+
+                <TextView
+                    android:id="@+id/item_provinsiSekolah"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/provinsiSekolah"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/provinsiSekolah"
+                    app:layout_constraintTop_toTopOf="@+id/provinsiSekolah" />
+
+                <TextView
+                    android:id="@+id/thnLulus"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Tahun Lulus"
+                    app:layout_constraintStart_toStartOf="@id/provinsiSekolah"
+                    app:layout_constraintTop_toBottomOf="@id/provinsiSekolah" />
+
+                <TextView
+                    android:id="@+id/item_thnLulus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/thnLulus"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/thnLulus"
+                    app:layout_constraintTop_toTopOf="@+id/thnLulus" />
+
+                <TextView
+                    android:id="@+id/jmlNilai"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Jumlah Nilai"
+                    app:layout_constraintStart_toStartOf="@id/thnLulus"
+                    app:layout_constraintTop_toBottomOf="@id/thnLulus" />
+
+                <TextView
+                    android:id="@+id/item_jmlNilai"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/jmlNilai"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/jmlNilai"
+                    app:layout_constraintTop_toTopOf="@+id/jmlNilai" />
+
+                <TextView
+                    android:id="@+id/jmlMapel"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Jumlah Mata Pelajaran"
+                    app:layout_constraintStart_toStartOf="@id/jmlNilai"
+                    app:layout_constraintTop_toBottomOf="@id/jmlNilai" />
+
+                <TextView
+                    android:id="@+id/item_jmlMapel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/jmlMapel"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/jmlMapel"
+                    app:layout_constraintTop_toTopOf="@+id/jmlMapel" />
+
+                <TextView
+                    android:id="@+id/jurusanSekolah"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Jurusan Sekolah"
+                    app:layout_constraintStart_toStartOf="@id/jmlMapel"
+                    app:layout_constraintTop_toBottomOf="@id/jmlMapel" />
+
+                <TextView
+                    android:id="@+id/item_jurusanSekolah"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/jurusanSekolah"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/jurusanSekolah"
+                    app:layout_constraintTop_toTopOf="@+id/jurusanSekolah" />
+
+                <TextView
+                    android:id="@+id/statusSekolah"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Status Sekolah"
+                    app:layout_constraintStart_toStartOf="@id/jurusanSekolah"
+                    app:layout_constraintTop_toBottomOf="@id/jurusanSekolah" />
+
+                <TextView
+                    android:id="@+id/item_statusSekolah"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/statusSekolah"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/statusSekolah"
+                    app:layout_constraintTop_toTopOf="@+id/statusSekolah" />
+
+                <TextView
+                    android:id="@+id/tvD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="32dp"
+                    android:text="D. Partisipasi Program Beasiswa"
+                    style="@style/styleSubJudul"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/statusSekolah" />
+
+                <TextView
+                    android:id="@+id/jmlSumbangan"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Jumlah Sumbangan"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvD" />
+
+                <TextView
+                    android:id="@+id/item_jmlSumbangan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/jmlSumbangan"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/jmlSumbangan"
+                    app:layout_constraintTop_toTopOf="@+id/jmlSumbangan" />
+
+                <TextView
+                    android:id="@+id/tvE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="32dp"
+                    android:text="E. Dokumen pengajuan beasiswa"
+                    style="@style/styleSubJudul"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/jmlSumbangan" />
+
+                <TextView
+                    android:id="@+id/checkMiskin"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Surat Tidak Mampu"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvE" />
+
+                <TextView
+                    android:id="@+id/item_checkMiskin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/checkMiskin"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/checkMiskin"
+                    app:layout_constraintTop_toTopOf="@+id/checkMiskin" />
+
+                <TextView
+                    android:id="@+id/checkGaji"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Surat Gaji Ortu"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/item_checkMiskin" />
+
+                <TextView
+                    android:id="@+id/item_checkGaji"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/checkGaji"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/checkGaji"
+                    app:layout_constraintTop_toTopOf="@+id/checkGaji" />
+
+                <TextView
+                    android:id="@+id/checkTagihan"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="FC Tagihan Listrik"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/item_checkGaji" />
+
+                <TextView
+                    android:id="@+id/item_checkTagihan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/checkTagihan"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/checkTagihan"
+                    app:layout_constraintTop_toTopOf="@+id/checkTagihan" />
+
+                <TextView
+                    android:id="@+id/checkPrestasi"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Bukti Prestasi"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/item_checkTagihan" />
+
+                <TextView
+                    android:id="@+id/item_checkPrestasi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/checkPrestasi"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/checkPrestasi"
+                    app:layout_constraintTop_toTopOf="@+id/checkPrestasi" />
+
+                <TextView
+                    android:id="@+id/checkIjasah"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Ijasah dan Nilai"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/item_checkPrestasi" />
+
+                <TextView
+                    android:id="@+id/item_checkIjasah"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/chkIjasah"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/checkIjasah"
+                    app:layout_constraintTop_toTopOf="@+id/checkIjasah" />
+
+                <TextView
+                    android:id="@+id/checkRekom"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Surat Rekomendasi"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/item_checkIjasah" />
+
+                <TextView
+                    android:id="@+id/item_checkRekom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/checkRekom"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/checkRekom"
+                    app:layout_constraintTop_toTopOf="@+id/checkRekom"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/checkRaport"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="FC Raport"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/item_checkRekom" />
+
+                <TextView
+                    android:id="@+id/item_checkRaport"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@+id/checkRaport"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/checkRaport"
+                    app:layout_constraintTop_toTopOf="@+id/checkRaport" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/styleJudul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="Data Berhasil Di Simpan"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/item_checkRaport" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
