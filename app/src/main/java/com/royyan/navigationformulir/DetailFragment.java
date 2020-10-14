@@ -43,6 +43,19 @@ public class DetailFragment extends Fragment {
         binding.itemPilihanA.setText(getArguments().getString("pilihanA"));
         binding.itemPilihanB.setText(getArguments().getString("pilihanB"));
 
+        //Point C
+        binding.itemAsalSekolah.setText(getArguments().getString("asalSekolah"));
+        binding.itemAlamatSekolah.setText(getArguments().getString("alamatSekolah"));
+        binding.itemKotaSekolah.setText(getArguments().getString("kotaSekolah"));
+        binding.itemProvinsiSekolah.setText(getArguments().getString("provinsiSekolah"));
+        binding.itemThnLulus.setText(getArguments().getString("tahunLulus"));
+        binding.itemJmlNilai.setText(getArguments().getString("jmlNilai"));
+        binding.itemJmlMapel.setText(getArguments().getString("jmlMapel"));
+        binding.itemJurusanSekolah.setText(getArguments().getString("jursuanSekolah"));
+        binding.itemStatusSekolah.setText(getArguments().getString("statusSekolah"));
+
+
+
         return view;
     }
 }

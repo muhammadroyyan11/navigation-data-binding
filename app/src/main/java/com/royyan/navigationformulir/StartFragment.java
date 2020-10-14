@@ -98,6 +98,20 @@ public class StartFragment extends Fragment {
                 bundle.putString("pilihanA", binding.spinnerPilihanA.getSelectedItem().toString());
                 bundle.putString("pilihanB", binding.spinnerPilihanB.getSelectedItem().toString());
 
+                //Point C
+                bundle.putString("asalSekolah", binding.editAlamatSekolah.getText().toString());
+                bundle.putString("alamatSekolah", binding.editAlamatSekolah.getText().toString());
+                bundle.putString("kotaSekolah", binding.editKotaSekolah.getText().toString());
+                bundle.putString("provinsiSekolah", binding.editProvinsiSekolah.getText().toString());
+                bundle.putString("tahunLulus", binding.editTahun.getText().toString());
+                bundle.putString("jmlNilai", binding.editJmlNilai.getText().toString());
+                bundle.putString("jmlMapel", binding.editMapel.getText().toString());
+                bundle.putString("jurusanSekolah", binding.spinnerJurusan.getSelectedItem().toString());
+                bundle.putString("statusSekolah", binding.spinnerNegeri.getSelectedItem().toString());
+
+                //Point D
+                bundle.putString("jmlSumbangan", binding.editSumbangan .getText().toString());
+
                 Navigation.findNavController(view).navigate(R.id.detailFragment, bundle);
             }
         });
