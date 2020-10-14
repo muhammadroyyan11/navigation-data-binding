@@ -39,6 +39,10 @@ public class DetailFragment extends Fragment {
         binding.itemProdi.setText(getArguments().getString("prodi"));
         binding.itemAkreditasi.setText(getArguments().getString("akreditasi"));
 
+        //Point B
+        binding.itemPilihanA.setText(getArguments().getString("pilihanA"));
+        binding.itemPilihanB.setText(getArguments().getString("pilihanB"));
+
         return view;
     }
 }

@@ -62,6 +62,8 @@ public class StartFragment extends Fragment {
                 int selectedId = binding.radioGroupJenisKelamin.getCheckedRadioButtonId();
 
                 Bundle bundle = new Bundle();
+
+                //Point A
                 bundle.putString("namaMahasiswa", binding.edtNama.getText().toString());
 
                 if(binding.radioLakiLaki.isChecked()){
@@ -90,6 +92,11 @@ public class StartFragment extends Fragment {
                 bundle.putString("asalPerguruan", binding.editPerguruanTinggi.getText().toString());
                 bundle.putString("prodi", binding.editProgramStudi.getText().toString());
                 bundle.putString("akreditasi", binding.spinnerAkreditasi.getSelectedItem().toString());
+
+
+                //Point B
+                bundle.putString("pilihanA", binding.spinnerPilihanA.getSelectedItem().toString());
+                bundle.putString("pilihanB", binding.spinnerPilihanB.getSelectedItem().toString());
 
                 Navigation.findNavController(view).navigate(R.id.detailFragment, bundle);
             }
