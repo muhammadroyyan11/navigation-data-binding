@@ -655,7 +655,7 @@
                     app:layout_constraintTop_toBottomOf="@id/tvE" />
 
                 <TextView
-                    android:id="@+id/item_checkMiskin"
+                    android:id="@+id/item_check_miskin"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text=""
@@ -673,10 +673,10 @@
                     android:layout_marginTop="8dp"
                     android:text="Surat Gaji Ortu"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/item_checkMiskin" />
+                    app:layout_constraintTop_toBottomOf="@id/item_check_miskin" />
 
                 <TextView
-                    android:id="@+id/item_checkGaji"
+                    android:id="@+id/item_check_gaji"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text=""
@@ -694,10 +694,10 @@
                     android:layout_marginTop="8dp"
                     android:text="FC Tagihan Listrik"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/item_checkGaji" />
+                    app:layout_constraintTop_toBottomOf="@id/item_check_gaji" />
 
                 <TextView
-                    android:id="@+id/item_checkTagihan"
+                    android:id="@+id/item_check_tagihan"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text=""
@@ -715,10 +715,10 @@
                     android:layout_marginTop="8dp"
                     android:text="Bukti Prestasi"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/item_checkTagihan" />
+                    app:layout_constraintTop_toBottomOf="@id/item_check_tagihan" />
 
                 <TextView
-                    android:id="@+id/item_checkPrestasi"
+                    android:id="@+id/item_check_prestasi"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text=""
@@ -736,10 +736,10 @@
                     android:layout_marginTop="8dp"
                     android:text="Ijasah dan Nilai"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/item_checkPrestasi" />
+                    app:layout_constraintTop_toBottomOf="@id/item_check_prestasi" />
 
                 <TextView
-                    android:id="@+id/item_checkIjasah"
+                    android:id="@+id/item_check_ijasah"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text=""
@@ -757,10 +757,10 @@
                     android:layout_marginTop="8dp"
                     android:text="Surat Rekomendasi"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/item_checkIjasah" />
+                    app:layout_constraintTop_toBottomOf="@id/item_check_ijasah" />
 
                 <TextView
-                    android:id="@+id/item_checkRekom"
+                    android:id="@+id/item_check_rekom"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text=""
@@ -780,10 +780,10 @@
                     android:layout_marginTop="8dp"
                     android:text="FC Raport"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/item_checkRekom" />
+                    app:layout_constraintTop_toBottomOf="@id/item_check_rekom" />
 
                 <TextView
-                    android:id="@+id/item_checkRaport"
+                    android:id="@+id/item_check_raport"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text=""
@@ -803,7 +803,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/item_checkRaport" />
+                    app:layout_constraintTop_toBottomOf="@+id/item_check_raport" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

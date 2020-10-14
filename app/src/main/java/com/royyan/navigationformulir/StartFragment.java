@@ -27,6 +27,14 @@ public class StartFragment extends Fragment {
         FragmentStartBinding binding = FragmentStartBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
 
+        binding.chkMiskin.setText("Tidak Terkumpul");
+        binding.chkGaji.setText("Tidak Terkumpul");
+        binding.chkTagihan.setText("Tidak Terkumpul");
+        binding.chkPrestasi.setText("Tidak Terkumpul");
+        binding.chkIjasah.setText("Tidak Terkumpul");
+        binding.chkRekom.setText("Tidak Terkumpul");
+        binding.chkFotoCopy.setText("Tidak Terkumpul");
+
         binding.radioGroupJenisKelamin.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group1, int checkedId1) {
@@ -113,82 +121,37 @@ public class StartFragment extends Fragment {
                 bundle.putString("jmlSumbangan", binding.editSumbangan .getText().toString());
 
                 //Point E
-                binding.chkMiskin.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        if(binding.chkMiskin.isChecked()){
-                            bundle.putString("TidakMampu", "Terkumpul");
-                        }else if(!binding.chkMiskin.isChecked()){
-                            bundle.putString("TidakMampu", "Tidak Terkumpul");
-                        }
-                    }
-                });
 
-                binding.chkRekom.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        if(binding.chkRekom.isChecked()){
-                            bundle.putString("rekomendasi", "Terkumpul");
-                        }else if(!binding.chkRekom.isChecked()){
-                            bundle.putString("rekomendasi", "Tidak Terkumpul");
-                        }
-                    }
-                });
+                if(binding.chkMiskin.isChecked()){
+                    bundle.putString("TidakMampu", "Terkumpul");
+                }else if(!binding.chkMiskin.isChecked()){
+                    bundle.putString("TidakMampu", "Tidak Terkumpul");
+                }else if(binding.chkRekom.isChecked()){
+                    bundle.putString("rekomendasi", "Terkumpul");
+                }else if(!binding.chkRekom.isChecked()){
+                    bundle.putString("rekomendasi", "Tidak Terkumpul");
+                }else if(binding.chkGaji.isChecked()){
+                    bundle.putString("gaji", "Terkumpul");
+                }else if(!binding.chkGaji.isChecked()){
+                    bundle.putString("gaji", "Tidak Terkumpul");
+                }else if(binding.chkTagihan.isChecked()){
+                    bundle.putString("tagihan", "Terkumpul");
+                }else if(!binding.chkTagihan.isChecked()){
+                    bundle.putString("tagihan", "Tidak Terkumpul");
+                }else if(binding.chkPrestasi.isChecked()){
+                    bundle.putString("prestasi", "Terkumpul");
+                }else if(!binding.chkPrestasi.isChecked()){
+                    bundle.putString("prestasi", "Tidak Terkumpul");
+                }else if(binding.chkFotoCopy.isChecked()){
+                    bundle.putString("raport", "Terkumpul");
+                }else if(!binding.chkFotoCopy.isChecked()){
+                    bundle.putString("raport", "Tidak Terkumpul");
+                }else if(binding.chkIjasah.isChecked()){
+                    bundle.putString("ijasah", "Terkumpul");
+                }else if(!binding.chkIjasah.isChecked()){
+                    bundle.putString("ijasah", "Tidak Terkumpul");
+                }
 
-                binding.chkGaji.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        if(binding.chkGaji.isChecked()){
-                            bundle.putString("gaji", "Terkumpul");
-                        }else if(!binding.chkGaji.isChecked()){
-                            bundle.putString("gaji", "Tidak Terkumpul");
-                        }
-                    }
-                });
-
-                binding.chkTagihan.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        if(binding.chkTagihan.isChecked()){
-                            bundle.putString("tagihan", "Terkumpul");
-                        }else if(!binding.chkTagihan.isChecked()){
-                            bundle.putString("tagihan", "Tidak Terkumpul");
-                        }
-                    }
-                });
-
-                binding.chkPrestasi.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        if(binding.chkPrestasi.isChecked()){
-                            bundle.putString("prestasi", "Terkumpul");
-                        }else if(!binding.chkPrestasi.isChecked()){
-                            bundle.putString("prestasi", "Tidak Terkumpul");
-                        }
-                    }
-                });
-
-                binding.chkFotoCopy.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        if(binding.chkFotoCopy.isChecked()){
-                            bundle.putString("raport", "Terkumpul");
-                        }else if(!binding.chkFotoCopy.isChecked()){
-                            bundle.putString("raport", "Tidak Terkumpul");
-                        }
-                    }
-                });
-
-                binding.chkIjasah.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        if(binding.chkIjasah.isChecked()){
-                            bundle.putString("ijasah", "Terkumpul");
-                        }else if(!binding.chkIjasah.isChecked()){
-                            bundle.putString("ijasah", "Tidak Terkumpul");
-                        }
-                    }
-                });
 
                 Navigation.findNavController(view).navigate(R.id.detailFragment, bundle);
             }

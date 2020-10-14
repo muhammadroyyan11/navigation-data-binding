@@ -51,7 +51,7 @@ public class DetailFragment extends Fragment {
         binding.itemThnLulus.setText(getArguments().getString("tahunLulus"));
         binding.itemJmlNilai.setText(getArguments().getString("jmlNilai"));
         binding.itemJmlMapel.setText(getArguments().getString("jmlMapel"));
-        binding.itemJurusanSekolah.setText(getArguments().getString("jursuanSekolah"));
+        binding.itemJurusanSekolah.setText(getArguments().getString("jurusanSekolah"));
         binding.itemStatusSekolah.setText(getArguments().getString("statusSekolah"));
 
         //Point D
