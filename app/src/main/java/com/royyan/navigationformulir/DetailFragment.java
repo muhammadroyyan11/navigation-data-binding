@@ -54,7 +54,17 @@ public class DetailFragment extends Fragment {
         binding.itemJurusanSekolah.setText(getArguments().getString("jursuanSekolah"));
         binding.itemStatusSekolah.setText(getArguments().getString("statusSekolah"));
 
+        //Point D
+        binding.itemJmlSumbangan.setText(getArguments().getString("jmlSumbangan"));
 
+        //Point E
+        binding.itemCheckMiskin.setText(getArguments().getString("TidakMampu"));
+        binding.itemCheckRekom.setText(getArguments().getString("rekomendasi"));
+        binding.itemCheckGaji.setText(getArguments().getString("gaji"));
+        binding.itemCheckTagihan.setText(getArguments().getString("tagihan"));
+        binding.itemCheckPrestasi.setText(getArguments().getString("prestasi"));
+        binding.itemCheckRaport.setText(getArguments().getString("raport"));
+        binding.itemCheckIjasah.setText(getArguments().getString("ijasah"));
 
         return view;
     }

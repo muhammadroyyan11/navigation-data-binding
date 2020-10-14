@@ -112,6 +112,84 @@ public class StartFragment extends Fragment {
                 //Point D
                 bundle.putString("jmlSumbangan", binding.editSumbangan .getText().toString());
 
+                //Point E
+                binding.chkMiskin.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if(binding.chkMiskin.isChecked()){
+                            bundle.putString("TidakMampu", "Terkumpul");
+                        }else if(!binding.chkMiskin.isChecked()){
+                            bundle.putString("TidakMampu", "Tidak Terkumpul");
+                        }
+                    }
+                });
+
+                binding.chkRekom.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if(binding.chkRekom.isChecked()){
+                            bundle.putString("rekomendasi", "Terkumpul");
+                        }else if(!binding.chkRekom.isChecked()){
+                            bundle.putString("rekomendasi", "Tidak Terkumpul");
+                        }
+                    }
+                });
+
+                binding.chkGaji.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if(binding.chkGaji.isChecked()){
+                            bundle.putString("gaji", "Terkumpul");
+                        }else if(!binding.chkGaji.isChecked()){
+                            bundle.putString("gaji", "Tidak Terkumpul");
+                        }
+                    }
+                });
+
+                binding.chkTagihan.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if(binding.chkTagihan.isChecked()){
+                            bundle.putString("tagihan", "Terkumpul");
+                        }else if(!binding.chkTagihan.isChecked()){
+                            bundle.putString("tagihan", "Tidak Terkumpul");
+                        }
+                    }
+                });
+
+                binding.chkPrestasi.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if(binding.chkPrestasi.isChecked()){
+                            bundle.putString("prestasi", "Terkumpul");
+                        }else if(!binding.chkPrestasi.isChecked()){
+                            bundle.putString("prestasi", "Tidak Terkumpul");
+                        }
+                    }
+                });
+
+                binding.chkFotoCopy.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if(binding.chkFotoCopy.isChecked()){
+                            bundle.putString("raport", "Terkumpul");
+                        }else if(!binding.chkFotoCopy.isChecked()){
+                            bundle.putString("raport", "Tidak Terkumpul");
+                        }
+                    }
+                });
+
+                binding.chkIjasah.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if(binding.chkIjasah.isChecked()){
+                            bundle.putString("ijasah", "Terkumpul");
+                        }else if(!binding.chkIjasah.isChecked()){
+                            bundle.putString("ijasah", "Tidak Terkumpul");
+                        }
+                    }
+                });
+
                 Navigation.findNavController(view).navigate(R.id.detailFragment, bundle);
             }
         });

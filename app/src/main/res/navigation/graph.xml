@@ -69,6 +69,57 @@
         <argument
             android:name="pilihanB"
             app:argType="string" />
+        <argument
+            android:name="asalSekolah"
+            app:argType="string" />
+        <argument
+            android:name="alamatSekolah"
+            app:argType="string" />
+        <argument
+            android:name="kotaSekolah"
+            app:argType="string" />
+        <argument
+            android:name="provinsiSekolah"
+            app:argType="string" />
+        <argument
+            android:name="tahunLulus"
+            app:argType="string" />
+        <argument
+            android:name="jmlNilai"
+            app:argType="string" />
+        <argument
+            android:name="jmlMapel"
+            app:argType="string" />
+        <argument
+            android:name="jurusanSekolah"
+            app:argType="string" />
+        <argument
+            android:name="statusSekolah"
+            app:argType="string" />
+        <argument
+            android:name="jmlSumbangan"
+            app:argType="string" />
+        <argument
+            android:name="TidakMampu"
+            app:argType="string" />
+        <argument
+            android:name="rekomendasi"
+            app:argType="string" />
+        <argument
+            android:name="gaji"
+            app:argType="string" />
+        <argument
+            android:name="tagihan"
+            app:argType="string" />
+        <argument
+            android:name="prestasi"
+            app:argType="string" />
+        <argument
+            android:name="raport"
+            app:argType="string" />
+        <argument
+            android:name="ijasah"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
